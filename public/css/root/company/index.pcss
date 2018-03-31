@@ -1,0 +1,103 @@
+.company {
+    position: relative;
+    min-height: 570px;
+    background: url("~raster/company-min.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.company__inner {
+    padding-bottom: 30px;
+    background-color: #ffffffcf;
+}
+
+.company__title {
+    padding-top: 80px;
+}
+
+.company__text {
+    &--blue {
+        color: #3aa1c5;
+        border-bottom: 3px solid #3aa1c5;
+    }
+}
+
+.company__desc {
+    line-height: 28px;
+    font-size: 19px;
+    color: #535353;
+    font-weight: bold;
+    padding: 0 60px 10px;
+}
+
+.company_group {
+    display: flex;
+    padding: 20px 45px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.company__item {
+    margin: 20px 15px;
+}
+
+.company__item-head {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #3aa1c5;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    line-height: 19px;
+}
+
+.company__item-body {
+    width: 190px;
+    height: 100px;
+    border: 3px solid #3aa1c5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company__item-num {
+    font-weight: bold;
+    color: #082f4b;
+    font-size: 40px;
+    padding-bottom: 12px;
+}
+
+.company__item-desc {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1px;
+    padding-top: 10px;
+    color: #3aa1c5;
+}
+
+.company__bg-dotted {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 1;
+    height: 100%;
+    width: auto;
+    background: url("~svg/dot.svg") repeat 0 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .company__desc {
+        padding: 0 0 10px;
+        font-size: 14px;
+    }
+}

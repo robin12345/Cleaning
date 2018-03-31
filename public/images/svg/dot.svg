@@ -1,0 +1,17 @@
+<svg width="4" height="4" viewBox="0 0 4 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 3</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-6146 1378)">
+<g id="Group 3">
+<g id="Rectangle 2">
+<use xlink:href="#path0_fill" transform="translate(6146 -1378)" fill="#082F4B"/>
+</g>
+<g id="Rectangle 2.1">
+<use xlink:href="#path0_fill" transform="translate(6148 -1376)" fill="#082F4B"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 2 0L 2 2L 0 2L 0 0Z"/>
+</defs>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="96" height="62" viewBox="0 0 96 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>logo2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1494 812)">
+<g id="logo2">
+<g id="Ellipse 3">
+<use xlink:href="#path0_fill" transform="translate(1506 -812)" fill="#082F4B"/>
+</g>
+<g id="Ellipse 3">
+<use xlink:href="#path1_fill" transform="translate(1547.97 -801)" fill="#808889"/>
+</g>
+<g id="Ellipse 4">
+<use xlink:href="#path2_fill" transform="translate(1553.99 -811.858)" fill="#082F4B"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path3_fill" transform="translate(1494 -768)" fill="#3AA1C5"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 64.5 0.258857C 61.8895 1.03825 19.2261 18.3692 12.4998 45.3855C 4.99976 48.2589 -2.17629e-08 43.8856 7.10472e-17 43.3862C 7.10472e-17 43.3862 8.50025 45.8862 10.5 43.3861C 28.7114 -2.37308 67.1105 -0.520535 64.5 0.258857Z"/>
+<path id="path1_fill" d="M 2.52694 13.5C 2.52694 20.9558 6.52694 27 6.52694 27C 6.13754 27.1208 -0.472668 21.1108 0.0269394 13.5C 0.0269394 6.04416 6.52694 0 6.52694 0C 6.52694 0 2.52694 6.04416 2.52694 13.5Z"/>
+<path id="path2_fill" d="M 4.01186 23.594C 4.01186 33.3298 9.14884 43.8395 22.0119 43.3582C 12.7655 46.8009 -0.45183 37.2499 0.011875 23.594C 0.815313 11.3173 6.55286 0.385125 16.5119 0.358174C 16.5541 -2.6371 4.01186 13.8582 4.01186 23.594Z"/>
+<path id="path3_fill" d="M 96 0C 96 0 74.5097 18 48 18C 21.4903 18 0 0 0 0C 0 0 21.4903 10.2162 48 10.2162C 74.5097 10.2162 96 0 96 0Z"/>
+</defs>
+</svg>

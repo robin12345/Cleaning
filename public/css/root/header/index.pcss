@@ -1,0 +1,96 @@
+.header {
+
+}
+
+.header__info {
+    &--middle {
+    }
+
+    &--top {
+        background-color: #f0f0f0;
+        color: #082f4b;
+    }
+}
+
+.header__text {
+    display: flex;
+    line-height: 23px;
+    padding: 10px 20px !important;
+    min-height: 50px;
+    align-items: center;
+}
+
+
+.header__inner {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__icon {
+    &--logo {
+        @mixin icon "svg/logo.svg";
+    }
+
+    &--round {
+        display: block;
+        margin: 0 15px;
+        @mixin icon "svg/24.svg";
+    }
+}
+
+.header__round-text {
+    color: #999;
+    line-height: 22px;
+}
+
+.header__cell {
+    display: flex;
+}
+
+.header__contacts {
+    font-weight: 800;
+    line-height: 22px;
+    color: #666;
+}
+
+.header__email {
+    letter-spacing: 1px;
+}
+
+.header__ask-call {
+    padding: 15px 40px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #3aa1c5;
+}
+
+@media only screen and (max-width: 1023px) {
+    .header__round-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 966px) {
+    .header__text {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header__icon--logo {
+        @mixin icon "svg/logo2.svg";
+    }
+
+    .header__ask-call {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .header__icon--logo {
+        display: none;
+    }
+}

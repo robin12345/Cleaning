@@ -1,0 +1,26 @@
+<svg width="150" height="50" viewBox="0 0 150 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>logo</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1498 552)">
+<g id="logo">
+<g id="Ellipse 3">
+<use xlink:href="#path0_fill" transform="translate(1504.63 -552)" fill="#082F4B"/>
+</g>
+<g id="Ellipse 4">
+<use xlink:href="#path1_fill" transform="translate(1544.4 -551.883)" fill="#082F4B"/>
+</g>
+<g id="Ellipse 2">
+<use xlink:href="#path2_fill" transform="translate(1498 -527.138)" fill="#3AA1C5"/>
+</g>
+<g id="Ellipse 3">
+<use xlink:href="#path3_fill" transform="translate(1539.42 -542.885)" fill="#808889"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 53.4531 0.214522C 51.2897 0.860428 15.9332 15.2231 10.359 37.6123C 4.14345 39.9935 -1.80356e-08 36.3693 5.8879e-17 35.9554C 5.8879e-17 35.9554 7.04441 38.0272 8.7017 35.9554C 23.794 -1.96664 55.6165 -0.431383 53.4531 0.214522Z"/>
+<path id="path1_fill" d="M 3.32475 19.5531C 3.32475 27.6214 7.58192 36.331 18.2419 35.9322C 10.5792 38.7853 -0.374446 30.8701 0.00984116 19.5531C 0.675675 9.379 5.43056 0.319164 13.6839 0.29683C 13.7189 -2.18545 3.32475 11.4847 3.32475 19.5531Z"/>
+<path id="path2_fill" d="M 150 13.894C 150 13.894 108.563 -8.06737 75.4143 13.894C 42.265 35.8554 0 15.966 0 15.966C 0 15.966 43.094 29.2254 75.4143 8.09283C 107.735 -13.0398 150 13.894 150 13.894Z"/>
+<path id="path3_fill" d="M 2.09415 11.1878C 2.09415 17.3667 5.40906 22.3757 5.40906 22.3757C 5.08636 22.4758 -0.391714 17.4952 0.0223255 11.1878C 0.0223255 5.00897 5.40906 0 5.40906 0C 5.40906 0 2.09415 5.00897 2.09415 11.1878Z"/>
+</defs>
+</svg>
