@@ -8,6 +8,6 @@ import Popup from './app/popup';
 
 new Main();
 new Slideshow();
-new Header();
-new Scroll();
 new Popup();
+new Scroll();
+new Header();

@@ -1,6 +1,6 @@
-// import smoothscroll from 'smoothscroll-polyfill';
-//
-// smoothscroll.polyfill();
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 window.__forceSmoothScrollPolyfill__ = true;
 
 export default class Scroll {
@@ -37,6 +37,9 @@ export default class Scroll {
   eventsListener() {
     const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
-    linksToAnchors.forEach(each => (each.onclick = this.anchorLinkHandler.bind(this)));
+
+    for (let i = 0; i < linksToAnchors.length; i++) {
+      linksToAnchors[i].addEventListener("click", this.anchorLinkHandler.bind(this), false)
+    }
   }
 }
