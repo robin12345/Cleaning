@@ -28,7 +28,27 @@
             </div>
           </div>
           <div class="header__cell header__cell--3">
-            <div class="header__ask-call">Заказать звонок</div>
+            <div class="header__ask-call ask-call">Заказать звонок</div>
+            <div class="header-nav">
+              <input type="checkbox" class="header-nav__open" name="header-nav__open" id="header-nav__open"/>
+              <label class="header-nav__open-button" for="header-nav__open">
+                <span class="header-nav__hamburger header-nav__hamburger--1"></span>
+                <span class="header-nav__hamburger header-nav__hamburger--2"></span>
+                <span class="header-nav__hamburger header-nav__hamburger--3"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="header__shadow"></div>
+          <div class="header__container">
+            <div class="header__container-inner">
+              <a class="header__menu-item" href="#service">Услуги</a>
+              <a class="header__menu-item" href="#steps">Схема работы</a>
+              <a class="header__menu-item" href="#methods">Технологии</a>
+              <a class="header__menu-item" href="#company">О компании</a>
+              <a class="header__menu-item" href="#contacts">Контакты</a>
+            </div>
           </div>
         </div>
       </div>
@@ -39,30 +59,33 @@
         <div class="banner__top">
           <div class="banner__nav wrapper">
             <div class="banner__nav-item">
-              <a href="" class="banner__nav-link">
-                <span>Услуги</span>
+              <a href="#service" class="banner__nav-link">
+                <span class="banner__nav-text">Услуги</span>
               </a>
             </div>
             <div class="banner__nav-item">
-              <a href="" class="banner__nav-link">
-                <span>Схема работы</span>
+              <a href="#steps" class="banner__nav-link">
+                <span class="banner__nav-text">Схема работы</span>
               </a>
             </div>
             <div class="banner__nav-item">
-              <a href="" class="banner__nav-link">
-                <span>Технологии</span>
+              <a href="#methods" class="banner__nav-link">
+                <span class="banner__nav-text">Технологии</span>
               </a>
             </div>
             <div class="banner__nav-item">
-              <a href="" class="banner__nav-link">
-                <span>О компании</span>
+              <a href="#company" class="banner__nav-link">
+                <span class="banner__nav-text">О компании</span>
               </a>
             </div>
             <div class="banner__nav-item">
-              <a href="" class="banner__nav-link">
-                <span>Контакты</span>
+              <a href="#contacts" class="banner__nav-link">
+                <span class="banner__nav-text">Контакты</span>
               </a>
             </div>
+          </div>
+          <div class="banner__phone">
+            <span class="banner__phone-text">+7 (913) 251-68-33</span>
           </div>
         </div>
 
@@ -74,7 +97,7 @@
             </h1>
           </div>
           <div class="banner__call">
-            <div class="banner__call-btn">
+            <div class="banner__call-btn ask-call">
               Вызвать аварийную службу
             </div>
           </div>
@@ -125,7 +148,7 @@
       </div>
     </div>
 
-    <div class="service wrapper">
+    <div class="service wrapper" id="service">
       <div class="service__inner">
         <div class="service__title title">
           Услуги
@@ -287,7 +310,7 @@
       </div>
     </div>
 
-    <div class="steps">
+    <div class="steps" id="steps">
       <div class="steps__inner wrapper">
         <div class="steps__title title">
           Как мы работаем
@@ -315,14 +338,14 @@
           </div>
         </div>
         <div class="steps__call">
-          <div class="banner__call-btn">
+          <div class="banner__call-btn ask-call">
             Вызвать аварийную службу
           </div>
         </div>
       </div>
     </div>
 
-    <div class="methods">
+    <div class="methods" id="methods">
       <div class="methods__inner wrapper">
 
         <div class="methods__title title">
@@ -449,7 +472,7 @@
       </div>
     </div>
 
-    <div class="company">
+    <div class="company" id="company">
       <div class="company__inner">
         <div class="company__main wrapper">
           <div class="company__title title">
@@ -504,7 +527,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="contacts">
       <div class="footer__inner">
         <div class="footer__main">
           <div class="footer__group wrapper">
@@ -550,6 +573,33 @@
         </div>
       </div>
       <div class="footer__lens"></div>
+    </div>
+
+    <div class="popup">
+      <div class="popup__close">Закрыть</div>
+
+      <div class="popup__inner">
+        <h2 class="popup__title">Заказать звонок</h2>
+
+        <form class="popup__form">
+          <div class="popup_phone-wrap">
+            <span class="popup__mask">+7</span>
+            <input required="" type="text" class="popup__input" name="client-phone" placeholder="(913) 555 - 5555" id="phone">
+          </div>
+          <input type="submit" value="Отправить" id="send" class="popup__send">
+        </form>
+
+        <div class="popup__info">
+          <div class="popup__info-text">
+            Нажимая кнопку "Отправить" вы принимаете условия
+            <a href="./dist/personal.pdf" target="blank" class="">Пользовательского соглашения</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadow">
+
     </div>
   </div>
 <script type="text/javascript" src="./dist/index.js"></script></body>

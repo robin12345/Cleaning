@@ -4,11 +4,34 @@
 
 .header__info {
     &--middle {
+        position: relative;
+        border-bottom: 2px solid var(--main-1);
     }
 
     &--top {
         background-color: #f0f0f0;
         color: #082f4b;
+    }
+
+    &--sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 111;
+        background-color: rgba(255, 255, 255, 0.95);
+
+        .header__icon--logo {
+            @mixin icon "svg/logo3.svg";
+            width: 191px;
+        }
+
+        .header__inner {
+            height: 75px;
+        }
+
+        .header__menu {
+            height: calc(100vh - 75px);
+        }
     }
 }
 
@@ -26,6 +49,8 @@
     height: 120px;
     align-items: center;
     justify-content: space-between;
+
+    transition: height .3s;
 }
 
 .header__icon {
@@ -67,6 +92,140 @@
     background-color: #3aa1c5;
 }
 
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav__open {
+    display: none;
+}
+
+.header-nav__hamburger {
+    width: 30px;
+    height: 3px;
+    background: var(--main-1);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: -1.5px;
+    transition: transform 200ms;
+
+    &--1 {
+        transform: translate3d(0, -8px, 0);
+    }
+
+    &--2 {
+        transform: translate3d(0, 0, 0);
+    }
+
+    &--3 {
+        transform: translate3d(0, 8px, 0);
+    }
+}
+
+.header-nav__open:checked + .header-nav__open-button .header-nav__hamburger {
+    background-color: var(--main-1);
+
+    &--1 {
+        transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+
+    &--2 {
+        transform: translate3d(0, 0, 0) scale(0.1, 1);
+    }
+
+    &--3 {
+        transform: translate3d(0, 0, 0) rotate(-45deg);
+    }
+}
+
+
+.header-nav__open:checked + .header-nav__open-button {
+    background-color: rgba(0,0,0,0);
+}
+
+.header-nav__open-button {
+    display: none;
+    flex-shrink: 0;
+    background: rgba(0,0,0,0);
+    width: 60px;
+    height: 50px;
+    transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    cursor: pointer;
+}
+
+.header__menu {
+    display: block;
+    position: fixed;
+    //top: 170px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 170px);
+    z-index: 100;
+    //display: flex;
+    justify-content: flex-end;
+    background: rgba(0,0,0,.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+
+    &--visible {
+        visibility: visible;
+        opacity: 1;
+
+        .header__container {
+            right: 0;
+        }
+    }
+}
+
+.header__shadow {
+    height: 100%;
+    width: calc(100% - 250px);
+}
+
+.header__container {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: var(--main-2);
+    color: #fff;
+    opacity: 0.9;
+    transition: right 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+.header__container-inner {
+    height: 80%;
+    width: 180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.header__menu-item {
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,0);
+
+    &:hover {
+        border-bottom: 2px solid #fff;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
     .header__round-text {
         display: none;
@@ -81,16 +240,34 @@
 
 @media only screen and (max-width: 767px) {
     .header__icon--logo {
-        @mixin icon "svg/logo2.svg";
+        @mixin icon "svg/logo3.svg";
     }
 
     .header__ask-call {
         display: none;
     }
+
+    .header-nav__open-button {
+        display: flex;
+    }
+
+    .header__icon--round {
+        display: none;
+    }
+
+    .header-nav {
+        min-width: 100px;
+    }
 }
 
-@media only screen and (max-width: 460px) {
-    .header__icon--logo {
+@media only screen and (max-width: 530px) {
+    .header__contacts {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .header__icon--logo {
+        @mixin icon "svg/logo3.svg";
     }
 }

@@ -21,7 +21,9 @@
   },
   "author": "github.com/andryushkov-ky",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.3"
+  },
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
