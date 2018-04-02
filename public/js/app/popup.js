@@ -1,3 +1,5 @@
+import IMask from 'imask';
+
 export default class Popup {
   constructor() {
     this.popup = document.querySelector('.popup');
@@ -10,12 +12,13 @@ export default class Popup {
     const phone = document.getElementById('phone');
     const shadow = document.querySelector('.shadow');
     const popupClose = document.querySelector('.popup__close');
-    let callBtns = document.querySelectorAll('.ask-call');
+    const callBtns = document.querySelectorAll('.ask-call');
 
-    phone.addEventListener('input', function (e) {
-      let x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
-      e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? ` - ` + x[3] : '');
-    });
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+
+    new IMask(phone, maskOptions);
 
     for (let i = 0; i < callBtns.length; i++) {
       callBtns[i].addEventListener("click", this.togglePopup.bind(this, true), false)

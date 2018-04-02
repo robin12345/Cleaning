@@ -22,7 +22,9 @@
   "author": "github.com/andryushkov-ky",
   "license": "ISC",
   "dependencies": {
-    "smoothscroll-polyfill": "^0.4.3"
+    "imask": "^3.1.2",
+    "smoothscroll-polyfill": "^0.4.3",
+    "vanilla-text-mask": "^5.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

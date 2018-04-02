@@ -14,7 +14,13 @@ p {
 }
 
 a {
+
     text-decoration: none;
+}
+
+a[href^="tel"] {
+    color: inherit; /* Inherit text color of parent element. */
+    text-decoration: none; /* Remove underline. */
 }
 
 input[type=text] {
