@@ -12,7 +12,7 @@ const config = {
     },
     output: {
         path: commonPaths.outputPath,
-        publicPath: NODE_ENV === 'dev' ? '/' : './dist/',
+        publicPath: NODE_ENV === 'dev' ? '/' : './',
         filename: '[name].js'
     },
     module: {
