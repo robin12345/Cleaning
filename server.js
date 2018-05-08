@@ -40,7 +40,7 @@ app.post('/callback', (req, res, next) => {
 
   const mailOptions = {
     from: 'acula22info@gmail.com', // sender address
-    to: 'andrushkov.konstantin@gmail.com', // list of receivers
+    to: 'fuzzysem@gmail.com, andrushkov.konstantin@gmail.com', // list of receivers
     subject: 'New request', // Subject line
     html: `We get new request phone: ${req.body.phone}`// plain text body
   };

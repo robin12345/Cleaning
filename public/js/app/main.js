@@ -5,6 +5,7 @@ export default class Main extends Global {
     constructor () {
         super();
 
+        this.setFooterYear();
         this.eventsListener();
     }
 
@@ -16,4 +17,8 @@ export default class Main extends Global {
     toggleMenu() {
 
     }
+
+  setFooterYear() {
+        window.document.getElementById('current-year').innerHTML = new Date().getFullYear();
+  }
 }
