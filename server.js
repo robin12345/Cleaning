@@ -1,9 +1,13 @@
 const express = require('express');
 const path = require('path');
-const port = process.env.PORT || 8080;
+const port80 = 80;
+const port443 = 443;
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const config = require('./config.json');
+const fs = require('fs');
+const http = require('http');
+const https = require('https');
 
 let transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -14,6 +18,14 @@ let transporter = nodemailer.createTransport({
 });
 
 const app = express();
+
+const options = {
+  key: fs.readFileSync(path.resolve(__dirname, 'sslcert/key.pem')),
+  cert: fs.readFileSync(path.resolve(__dirname, 'sslcert/crt.pem'))
+};
+
+const httpsServer = https.createServer(options, app);
+const httpServer = http.createServer(app);
 
 app.use(express.static(__dirname));
 
@@ -40,7 +52,7 @@ app.post('/callback', (req, res, next) => {
 
   const mailOptions = {
     from: 'acula22info@gmail.com', // sender address
-    to: 'fuzzysem@gmail.com, andrushkov.konstantin@gmail.com', // list of receivers
+    to: 'andrushkov.konstantin@gmail.com', // list of receivers
     subject: 'New request', // Subject line
     html: `We get new request phone: ${req.body.phone}`// plain text body
   };
@@ -54,5 +66,6 @@ app.post('/callback', (req, res, next) => {
 
 });
 
-app.listen(port);
-console.log('Server started!');
+httpsServer.listen(port443, '151.248.114.226');
+httpServer.listen(port80, '151.248.114.226');
+console.log('Servers started!');

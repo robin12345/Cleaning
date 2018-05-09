@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="32988d9b-d9f0-49ff-a0cf-6b537d58ab5d" name="acula22" url="http://151.248.114.226">
+        <fileTransfer host="151.248.114.226" port="22" rootFolder="/home/Cleaning" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
